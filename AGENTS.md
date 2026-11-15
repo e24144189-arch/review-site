@@ -6,8 +6,9 @@
 ## 技術與風格
 - 純 HTML + CSS + 少量原生 JavaScript（只有 `js/main.js`，負責首頁篩選與排序），不使用框架或建置工具
 - 共用樣式只放 `css/style.css`，頁面內不寫 <style>
-- 風格：深色電影感。色票：背景 #100e0d、文字 #efe8dc、金色 #d4a74a、紅色 #b3303a
+- 風格：深色電影感，搭配可愛卡通吉祥物與動態效果。色票：背景 #100e0d、文字 #efe8dc、金色 #d4a74a、紅色 #b3303a
 - 字體：標題 Noto Serif TC、內文 Noto Sans TC（Google Fonts）
+- 卡通圖案是內嵌在 `css/style.css` 的 SVG，依海報 `data-type` 自動顯示（書籍＝小書、電影＝場記板、動畫＝星星、影集＝爆米花），新增作品不需另做圖；動態效果只用 CSS，且必須放在 `prefers-reduced-motion:no-preference` 內
 - 海報顏色用 class `c1`～`c6`（定義於 style.css）；新作品挑一個尚未用過的顏色，用完再循環
 - 語言：繁體中文，語氣自然；版面需支援手機（375px）
 
