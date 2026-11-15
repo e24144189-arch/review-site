@@ -29,7 +29,7 @@
 
 ## 新增一篇心得的流程
 1. 依類型複製模板並依規則取檔名，放進 `reviews/`
-2. 只使用我提供的內容；缺少的欄位寫「待補充」並告訴我
+2. 只使用我提供的內容；缺少的欄位寫「待補充」並告訴我。若沒有提供評分，海報的 `data-rating` 填 0、星等位置顯示「待評分」，心得頁星等也寫「待評分」
 3. 在 `index.html` 的 `.wall` 最後加一張海報，格式如下，`data-order` 為現有最大值加 1：
    `<a class="poster c? " href="reviews/檔名.html" data-type="書籍|電影|影集|動畫" data-rating="1~5" data-order="N">` 內含類型標籤、標題 <strong>、作者與年份、星等
 4. 若出現新的 `data-type`，要在首頁篩選區補一顆 `data-filter` 按鈕
